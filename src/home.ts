@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit-element';
-import { moduleConnect } from '@uprtcl/multiprovider-wiki';
+import { moduleConnect } from '@uprtcl/micro-orchestrator';
 
 import '@material/mwc-button';
 
