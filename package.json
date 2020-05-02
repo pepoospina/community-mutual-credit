@@ -1,20 +1,20 @@
 {
-  "name": "holochain-community-currency-app",
-  "version": "0.1.0",
-  "author": "guillem.cordoba@gmail.com",
+  "name": "intercreativity-app",
+  "version": "0.0.0",
+  "author": "pepo@collectiveone.org",
   "license": "MIT",
   "scripts": {
     "build": "rimraf dist && webpack",
     "start": "WS_INTERFACE=ws://localhost:8888 webpack-dev-server --mode=development --open",
     "start:bob": "WS_INTERFACE=ws://localhost:8889 webpack-dev-server --mode=development --open --port 8001",
     "start:carol": "WS_INTERFACE=ws://localhost:8890 webpack-dev-server --mode=development --open --port 8002",
-    "dev": "concurrently \"npm run hc:start\" \"npm start\"",
-    "hc:start": "concurrently \"sim2h_server\" \"npm run hc:alice\" \"npm run hc:bob\" \"npm run hc:carol\"",
-    "hc:alice": "cd ../dnas && holochain -c alice-conductor-config.toml",
-    "hc:bob": "cd ../dnas && holochain -c bob-conductor-config.toml",
-    "hc:carol": "cd ../dnas && holochain -c carol-conductor-config.toml"
+    "dev": "concurrently \"npm run hc:start\" \"npm start\""
   },
   "dependencies": {
+    "@uprtcl/evees": "0.0.7-alpha.7",
+    "@uprtcl/ethereum-provider": "0.0.7-alpha.7",
+    "@uprtcl/http-provider": "0.0.7-alpha.7",
+    "@uprtcl/multiprovider-wiki": "0.0.1-alpha.1",
     "@authentic/mwc-card": "^0.9.0",
     "@authentic/mwc-circular-progress": "^0.9.0",
     "@material/mwc-button": "^0.14.1",
@@ -32,9 +32,6 @@
     "@material/mwc-textarea": "^0.14.1",
     "@material/mwc-textfield": "^0.14.1",
     "@material/mwc-top-app-bar-fixed": "^0.14.1",
-    "@uprtcl/graphql": "0.0.7-alpha.6",
-    "@uprtcl/holochain-provider": "0.0.7-alpha.6",
-    "@uprtcl/micro-orchestrator": "0.0.7-alpha.6",
     "@vaadin/router": "^1.7.2",
     "lit-element": "^2.2.3",
     "navigo": "^7.1.2"

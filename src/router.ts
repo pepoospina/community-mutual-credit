@@ -6,7 +6,12 @@ export function setupRouter(outlet: HTMLElement) {
   router.setRoutes([
     { 
       path: '/', 
-      component: 'app-home' },
+      redirect: '/home' 
+    },
+    {
+      path: '/home',
+      component: 'app-home',
+    },
     {
       path: '/doc/:ref',
       component: 'app-doc',
