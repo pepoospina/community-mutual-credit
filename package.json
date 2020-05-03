@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "rimraf dist && webpack",
-    "start": "webpack-dev-server --mode=development --open",
+    "start": "webpack-dev-server --mode=development",
     "dev": "npm start"
   },
   "dependencies": {
@@ -26,11 +26,18 @@
     "@material/mwc-textarea": "^0.14.1",
     "@material/mwc-textfield": "^0.14.1",
     "@material/mwc-top-app-bar-fixed": "^0.14.1",
+    "@uprtcl/access-control": "0.0.7-alpha.7",
+    "@uprtcl/cortex": "0.0.7-alpha.7",
+    "@uprtcl/documents": "0.0.7-alpha.7",
     "@uprtcl/ethereum-provider": "0.0.7-alpha.7",
     "@uprtcl/evees": "0.0.7-alpha.7",
+    "@uprtcl/graphql": "0.0.7-alpha.7",
     "@uprtcl/http-provider": "0.0.7-alpha.7",
+    "@uprtcl/lenses": "0.0.7-alpha.7",
     "@uprtcl/micro-orchestrator": "0.0.7-alpha.7",
+    "@uprtcl/multiplatform": "0.0.7-alpha.7",
     "@uprtcl/multiprovider-wiki": "0.0.1-alpha.1",
+    "@uprtcl/wikis": "0.0.7-alpha.7",
     "@vaadin/router": "^1.7.2",
     "lit-element": "^2.2.3",
     "navigo": "^7.1.2",

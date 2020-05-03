@@ -2,8 +2,7 @@ import { EveesEthereum, EveesHttp } from '@uprtcl/evees';
 
 import { HttpConnection } from '@uprtcl/http-provider';
 import { EthereumConnection } from '@uprtcl/ethereum-provider';
-
-import { loadWikiModule } from '@uprtcl/multiprovider-wiki';
+import { loadWikiModule } from './intercreativity.module';
 
 export const initUprtcl = async () => {
   const c1host = 'http://localhost:3100/uprtcl/1';
